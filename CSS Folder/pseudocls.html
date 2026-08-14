@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: rgb(0, 0, 0);
+        }
+        a:visited{
+            color: rgb(164, 6, 151);
+        }
+        a:hover{
+            color: rgb(224, 1, 16);
+        }
+        a:active{
+            color: rgb(0, 206, 75);
+        }
+        input:focus{
+            color:red;
+            background-color:rgb(16, 5, 53);
+            border:2px solid red;
+            outline:none;
+        }
+        #img:hover{
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            transition:2s ease-in-out;
+
+        }
+        [type="checkbox"]:checked{
+            accent-color: red;
+            height: 30px;
+            width: 30px;
+        }
+        [type="radio"]:checked{
+            accent-color:yellow;
+            height:100px;
+            width:100px;
+        }
+        div>h1:first-child{
+            color: red;
+            background-color: tomato;
+        }
+        div>p:last-child{
+            color:rgb(212, 21, 21);
+            background-color:rgb(2, 62, 62);
+        }
+        div>h1:nth-child(3){
+            color:white;
+            background-color: black;
+        }
+        div>p:nth-child(odd){
+            color: aqua;
+            background-color: black;
+        }
+        div>p:nth-child(even){
+            color: black;
+            background-color: aqua;
+        }
+        #ft>h1:first-of-type{
+            color: blue;
+            background-color: aqua;
+
+        }
+        #lt>h3:last-of-type{
+            color: black;
+            background-color: violet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Dynamic pseudo classes</h1>
+    <!--LINK,ACTIVE,VISITED-->
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <hr >
+    <!--Focus-->
+    <input type="text" placeholder="Enter your name" id="name">
+    <!--Hover-->
+    <img src="../images/Gojo.jpg" alt="Sukuna" width="200" height="200"  id="img" style="border-radius: 50%;">
+    <hr>
+    <!--Checked-->
+    <input type="checkbox">
+    <input type="radio">
+
+    <h1>Structured Pseudo class</h1>
+    <hr>
+    <!--FirstChild-->
+    <div>
+        <h1>Raghul</h1>
+        <p>Suryaa</p>
+        <h2>vicky</h2>
+        <p>Maddy</p>
+        <h1>Akash</h1>
+    </div>
+    <!--Last Child-->
+    <div>
+        <p>Raja</p>
+        <h1>Dingaa</h1>
+        <h2>Vijaya</h2>
+        <h1>Bujji</h1>
+        <p>Mintuu</p>
+    </div>
+    <!--Nth Child-->
+    <div>
+        <h1>Raju</h1>
+        <h1>Nava</h1>
+        <h1>Nithi</h1>
+        <h1>Mahesh</h1>
+        <h1>Chutki</h1>
+        <h1>Bheem</h1>
+    </div>
+    <!--First OF Type-->
+    <div id="ft">
+        <h2>RajuBhaai</h1>
+        <h1>Velayaduu</h3>
+        <p>Mankatha</p>
+        <h1>Vetri</h1>
+        <p>Maran</p>
+    </div>
+    <!--Last Of Type-->
+    <div id="lt">
+        <h1>Monkey</h1>
+        <h3>Donkey</h3>
+        <p>elephant</p>
+        <h3>Jirafee</h3>
+        <p>yanaai</p>
+    </div>
+    </body>
+</html>

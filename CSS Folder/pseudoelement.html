@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+
+    <style>
+        #demo1::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+        #para1::first-line{
+            color: red;
+            background-color: yellow;
+        }
+        #demo2::before{
+            content:"Good";
+            color: red;
+        }
+        #demo3::before{
+            content: "😎";
+            font-size: larger;
+        }
+        #demo4::after{
+            content:"Afternoon😘";
+            color: red;
+        }
+        #demo5::after{
+            content:"CHRISTMAS🥳";
+            color: darkgreen;
+        }
+        ol>li::marker{
+            color: red;
+        }
+        #a1::marker{
+            content: "🍫";
+        }
+        #a2::marker{
+            content:"🍪";
+        }
+        #a3::marker{
+            content:"🥕";
+        }
+        #a4::marker{
+            content: "🍇";
+        }
+        #para2::selection{
+            color:darkblue;
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <!--First Letter-->
+    <h1 id="demo1">Navanithi</h1>
+
+    <hr>
+
+    <!--First Line-->
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias earum minus velit soluta sequi? Rem eius, amet dicta fugiat beatae fugit sint nesciunt modi eveniet doloremque quaerat officia labore qui magnam eum aliquid, aspernatur similique! Incidunt atque doloremque totam ex eius! Odio at in obcaecati iste aliquam recusandae debitis dolor eaque consequatur? Corrupti quidem possimus delectus incidunt, quos nesciunt nisi deleniti quasi ipsam, aperiam qui ipsa deserunt tenetur harum aliquid praesentium. Cumque sit nulla, est at nobis voluptas alias, reprehenderit quia ipsam optio consequatur beatae harum vel itaque maxime ut quae minus ratione illum tempore tempora non dolor incidunt possimus.</p>
+     <hr>
+    <!--Before Selector-->
+
+    <h1 id="demo2">Morning</h1>
+    <h1 id="demo3">Evening</h1>
+<hr>
+    <!--After Selector-->
+    <h1 id="demo4">GOOD</h1>
+    <h1 id="demo5">MARRY</h1>
+
+    <hr>
+    <!--MARKER-->
+
+    <ol>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Grapes</li>
+    </ol>
+
+    <ul>
+        <li id="a1">Choclate</li>
+        <li id="a2">Biscate</li>
+        <li id="a3">Vegetable</li>
+        <li id="a4">Fruits</li>
+    </ul>
+
+    <hr>
+
+    <!--Selection-->
+    <P id="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis recusandae odio illum, maiores voluptatibus qui dolores soluta nostrum dolore optio atque earum quas, iste, magnam quo ratione aliquam? Reprehenderit similique itaque, beatae impedit ad quasi dolorum reiciendis blanditiis eius a fuga dignissimos cumque rerum mollitia voluptatem amet quia! Expedita, maiores non pariatur inventore laudantium commodi, repellendus voluptates natus ullam tempore nihil blanditiis quo animi labore nulla officia, quas accusamus. Molestias ducimus, eum et sint quas tempore, debitis ut unde autem modi nulla non doloremque rerum numquam dignissimos praesentium suscipit iusto vero fugiat maiores! Totam, repudiandae autem vel fugiat, consectetur quis, maiores atque sapiente reprehenderit minus obcaecati ipsum minima sequi quo ullam quisquam est repellendus qui excepturi voluptate amet iusto suscipit! Nulla iusto totam doloribus cumque ipsam nisi qui odio tenetur fugit illum sequi, ut vero laboriosam asperiores consequatur quidem adipisci mollitia quam consequuntur dolorum veniam! Voluptatem architecto ea perferendis consequuntur sint voluptate minus voluptates! Explicabo sunt similique eos velit, voluptatem itaque, mollitia ex adipisci, repellat vitae vel molestias architecto. Mollitia inventore rerum expedita a numquam. Nam reiciendis, ullam, maxime officiis velit, doloremque commodi voluptate molestias veritatis iste iure id qui accusantium fugit sit similique rerum deserunt amet veniam distinctio aspernatur. Rerum corrupti, accusamus quia consequuntur sapiente sit magnam in natus recusandae cumque exercitationem similique est. Blanditiis minus explicabo repellendus? Vero eos dignissimos perspiciatis obcaecati. Ipsa odio molestias soluta cum fugit, mollitia sunt iste ipsum ullam odit maiores delectus facilis recusandae id doloremque illo velit labore exercitationem dolorem doloribus voluptatum nemo. Nobis distinctio id laborum incidunt. Recusandae nihil nisi maxime est, illum deserunt hic repellat quae sequi excepturi sit reiciendis veniam, cumque quibusdam, fugiat doloribus a perferendis aut nemo dolorem repellendus ullam natus veritatis? Excepturi ea reprehenderit cumque minima, pariatur sapiente fugit incidunt consequuntur illum. Quibusdam eaque impedit similique doloremque.</P>
+
+    
+</body>
+</html>

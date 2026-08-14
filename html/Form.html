@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+<style>
+    #demo{
+        background-color: aqua;
+        color: black;
+        font-size: 20px;
+    }
+</style>
+    
+    <form align="center" action="./multimedia.html"  target="_blank" method=""  id="demo">
+        <fieldset> 
+            <legend>Personal Information</legend>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" name="name" required value="Navanithi" size="50px" readonly><br><br>
+        <label >Password:</label>
+        <input type="password" placeholder="Enter your password" name="password" required  title="Password is required"> <br><br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email" name="email" required minlength="6" maxlength="30" size="30px">
+        <br><br>
+        <label>Select Country:</label>
+        <select name="country">
+            <option value="" hidden>Enter your country</option>
+            <option value="">India</option>
+            <option value="">China</option>
+            <option value="">Japan</option>
+            <option value="">America</option>
+            <option value="">UK</option>
+        </select>
+        <br><br>
+        <label>Age:</label>
+        <input type="number" placeholder="Enter your age" min="18" max="35" step="2">
+        <br><br>
+        <label>Mobile Number:</label>
+        <input type="tel" placeholder="Enter your mobile number" name="mobile" pattern="[0-9]{10}" required>
+        <br><br>
+        <label>Enter your Address:</label>
+        <textarea placeholder="Enter your address" rows="5" cols="30" name="address"></textarea>
+        <br><br>
+        <label>Select A Color:</label>
+        <input type="color">
+        <br><br>
+        <label>Range:</label>
+        <input type="range">
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender" disabled>Female
+        <br><br>
+        <label>Search:</label>
+        <input type="search" placeholder="Search here">
+        <br><br>
+        <label>Select a Language:</label>
+        <input type="checkbox" checked>Tamil
+        <input type="checkbox" checked>English
+        <input type="checkbox" >French
+        <input type="checkbox">Telugu
+        <input type="checkbox" disabled>Hindi
+        <br><br>
+        <label>Upload a file:</label>
+        <input type="file" placeholder="Upload a file">
+        <br><br>
+        <label>Enter url:</label>
+        <input type="url" >
+        <br><br>
+        <label>Select a Week</label>
+        <input type="week">
+        <br><br>
+        <label>Select month:</label>
+        <input type="Month">
+        <br><br>
+        <label>Select a Date:</label>
+        <input type="date">
+        <br><br>
+        <label>Select a Time:</label>
+        <input type="time">
+        <br><br>
+        <label>Select a Date and Time:</label>
+        <input type="datetime-local">
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value="button">
+        <button>Login</button>
+        </fieldset>
+    </form>
+    `   
+</body>
+</html>

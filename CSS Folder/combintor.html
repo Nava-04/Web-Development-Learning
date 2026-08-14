@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+
+    <style>
+        div p{
+            color: aqua;
+            background-color: black;
+            text-align: center;
+            border-radius: 10px;
+        }
+        div>h1{
+            color: black;
+            background-color: aqua;
+            text-align: center;
+            border-radius: 10px;
+        }
+        span>h1{
+            color: black;
+            background-color: chartreuse;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        /* div>span>h1{
+            color: black;
+            background-color: chartreuse;
+            border-radius: 10px;
+            text-align: center;
+        } */
+         h1+p{
+            color: white;
+            background-color: red;
+            text-align: center;
+            border-radius: 10px;
+         }
+         p+h2{
+            color: white;
+            background-color: darkmagenta;
+            text-align: center;
+            border-radius: 10px;
+         }
+         h2+p{
+            color: white;
+            background-color: darkgreen;
+            text-align: center;
+            border-radius: 10px;
+         }
+         p+h1{
+            color: wheat;
+            background-color: darkred;
+            text-align: center;
+            border-radius: 10px;
+         }
+         h3~h4{
+            color: brown;
+            background-color: green;
+            text-align: center;
+         }
+    </style>    
+
+</head>
+<body>
+    <!--DESCENDANT( ) -->
+    <div>
+        <p>Chintu</p>
+        <p>Mintuu</p>
+        <span>
+            <p>Nava</p>
+        </span>
+        <span>
+            <p>Nithi</p>
+        </span>
+    </div>
+    <!--Child(>)-->
+    <div>
+        <h1>Chotta</h1>
+        <h1>Bheem</h1>
+        <span>
+            <h1>Chutki</h1>
+        </span>
+        <span>
+            <h1>Raju</h1>
+        </span>
+    </div>
+<!--Adjacent(+)-->
+    <h1>Raju</h1>
+    <p>Nava</p>
+    <h2>Abhi</h2>
+    <p>Surya</p>
+    <h1>Madhav</h1>
+
+    <!--General(~)-->
+
+    <h3>laddu</h3>
+    <h4>Mintu</h4>
+    <h6>dolakpoor</h6>
+    <p>ganesan</p>
+    <h4>prasanna</h4>
+</body>
+</html>
