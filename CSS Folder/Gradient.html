@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Gradient</title>
+    <style>
+        /* Linear Gradient: */
+        #demo1{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            background-image:linear-gradient(red,blue,yellow,orange,black,violet,purple,white,green);
+            background-image:linear-gradient(to right bottom,red,blue,yellow,orange,black,violet,purple,white,green);
+        }
+        /* Repeating Linear Gradient: */
+        #demo2{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            background-image:repeating-linear-gradient(red 5%,black 10%,green 15%,orange 10%,purple,red,black);
+            background-image:repeating-linear-gradient(to left bottom,red 10%,blue,yellow,orange 11%,black,violet 10%,purple,white,green 20%);
+
+        }
+        /* radial Gradient: */
+        #demo3{
+            height: 300px;
+            width: 300px;
+            border: 3px solid black;
+            background-image: radial-gradient(red,yellow,rgb(255, 2, 124),white,rgb(209, 4, 209),rgb(43, 128, 0),black,orange);
+            border-radius: 50%;
+        }
+        /* Repeating radial Gradient: */
+        #demo4{
+            height: 300px;
+            width: 300px;
+            border: 3px solid black;
+            background-image: repeating-radial-gradient(red 10%,orange 10%,blue 10%,black 10%,white 20%,purple 10%,green 10%);
+            border-radius: 50%;
+        }
+        /* Conic Gradient: */
+        #demo5{
+            height: 300px;
+            width:300px;
+            border:3px solid black;
+            background-image:conic-gradient(red 50deg,blue 250deg,orange 140deg,purple 200deg,black);
+        }
+        /* Repeating Conic Gradient: */
+        #demo6{
+            height: 300px;
+            width: 300px;
+            border: 3px solid black;
+            background-image:repeating-conic-gradient(white 30deg 60deg,black 60deg 90deg,white 90deg 180deg,black 180deg 90deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="demo1"></div>
+    <hr>
+    <div id="demo2"></div>
+    <hr>
+    <div id="demo3"></div>
+    <hr>
+    <div id="demo4"></div>
+    <hr>
+    <div id="demo5"></div>
+    <hr>
+    <div id="demo6"></div>
+    
+</body>
+</html>
