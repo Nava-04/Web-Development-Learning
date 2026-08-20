@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PositionProperties</title>
+    <style>
+        #demo1{
+            position: static;
+            left: 300px;
+        }
+        .cls{
+            height: 200px;
+            width: 200px;
+            border:2px solid black;
+        }
+        #demo2{
+            background-color:red;
+        }
+        #demo3{
+            background-color: yellow;
+            position:absolute;
+            left:500px;
+        }
+        #demo4{
+            background-color:blue;
+        }
+        #demo5{
+            background-color:violet;
+            position: relative;
+            left: 500px;
+        }
+        #demo6{
+            background-color: chocolate;
+        }
+        #a1{
+            height: 140px;
+            width: 500px;
+            border:1px solid black;
+            background-color: aqua;
+        }
+        #a2{
+            height: 140px;
+            width:800px;
+            border:1px solid black;
+            background-color: violet;
+        }
+        #a3{
+            height: 100px;
+            width: 1700px;
+            border:1px solid black;
+            background-color: cornflowerblue;
+            position: fixed;
+            top:0px;
+            text-align: center;
+        }
+          #a4{
+            height: 140px;
+            width: 500px;
+            border:1px solid black;
+            background-color: rgb(2, 152, 60);
+        }
+         #b1{
+            height: 100px;
+            width: 1000px;
+            border:1px solid black;
+            position:sticky;
+            top:5px;
+            bottom:5px;
+            background-color: aqua;
+            text-align: center;
+        }
+        #b2{
+            height: 140px;
+            width:800px;
+            border:1px solid black;
+            background-color: violet;
+        }
+        #b3{
+            height: 140px;
+            width: 1700px;
+            border:1px solid black;
+            background-color: cornflowerblue;
+            
+        }
+          #b4{
+            height: 140px;
+            width: 500px;
+            border:1px solid black;
+            background-color: rgb(2, 152, 60);
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <!--Static Position-->
+    <div id="demo1">
+        <h1>Helooo</h1>
+        <h2>Worlddd</h2>
+    </div>
+    <hr>
+    <!--Absolute And Relative Path-->
+    <div id="demo2" class="cls">One</div>
+    <div id="demo3" class="cls">ABSOLUTE</div>
+    <div id="demo4" class="cls">Three</div>
+    <div id="demo5" class="cls">RELATIVE</div>
+    <div id="demo6" class="cls">Five</div>
+    <hr>
+    <!--FIXED POSITION-->
+    <div id="a1"></div>
+    <div id="a2"></div>
+    <div id="a3">FIXED POSITION</div>
+    <div id="a4"></div>
+    <hr>
+    <hr>
+    <!--STICKY POSITION-->
+    <div id="b1">STICKY POSITION</div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <div id="b4"></div>
+    
+</body>
+</html>
