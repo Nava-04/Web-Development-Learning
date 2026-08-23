@@ -19,7 +19,7 @@
 
             
            
-            flex-wrap: wrap-reverse;
+            /* flex-wrap: wrap-reverse;
              flex-wrap: nowrap;
               flex-wrap: wrap;
 
@@ -39,7 +39,7 @@
 
               align-items: center;
               align-items:flex-end;
-              align-items:flex-start;
+              align-items:flex-start; */
 
 
         }
@@ -51,15 +51,32 @@
         }
         #demo1{
             background-color: red;
+            order: 4;
+            /* flex-grow:90; */
+            flex-shrink:120;
+            align-self: center;
         }
          #demo2{
             background-color:yellow;
+            order:3;
+            /* flex-grow: 40; */
+            flex-shrink:70;
+            align-self: self-start;
         }
          #demo3{
             background-color: rgb(9, 213, 40);
+            order:2;
+            /* flex-grow:30; */
+            flex-shrink:50;
+            align-self:center;
+
         }
          #demo4{
             background-color: rgb(9, 255, 230);
+            order: 1;
+            /* flex-grow: 60; */
+            flex-shrink: 20;
+            align-self:end;
         }
     </Style>
 </head>
@@ -69,7 +86,7 @@
         <div id="demo2"class="cls">demo2</div>
         <div id="demo3"class="cls">demo3</div>
         <div id="demo4"class="cls">demo4</div>
-        <!-- <div id="demo1"class="cls">demo1</div>
+        <div id="demo1"class="cls">demo1</div>
         <div id="demo2"class="cls">demo2</div>
         <div id="demo3"class="cls">demo3</div>
         <div id="demo4"class="cls">demo4</div>
@@ -80,7 +97,7 @@
          <div id="demo1"class="cls">demo1</div>
         <div id="demo2"class="cls">demo2</div>
         <div id="demo3"class="cls">demo3</div>
-        <div id="demo4"class="cls">demo4</div> -->
+        <div id="demo4"class="cls">demo4</div>
     </div>
 </body>
 </html>
