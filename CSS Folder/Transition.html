@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+    #demo{
+        height:100px;
+        width:100px;
+        border:2px solid black;
+        border-radius: 50%;
+        background-color: crimson;
+        transition-duration:4s;
+        transition-delay:1s;
+        /* transition-property:height;
+        transition-property: width; */
+        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
+        transition-timing-function: ease-in-out;
+
+    }
+    #demo:hover{
+        height:250px;
+        width:250px;
+        border:2px solid black;
+        background-color: crimson;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+</html>
