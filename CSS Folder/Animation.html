@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #demo{
+            height:100px;
+            width:100px;
+            border:2px solid black;
+            background-color:red;
+            animation-duration:7s;
+            animation-delay:3s;
+            animation-iteration-count: infinite;
+            animation-name: nava;
+            animation-timing-function: ease;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out;
+            animation-play-state: paused;
+        }
+          #demo:hover{
+            height:100px;
+            width:100px;
+            border:2px solid black;
+            background-color:red;
+            animation-duration:5s;
+            animation-delay:1s;
+            animation-iteration-count: infinite;
+            animation-name: nava;
+            animation-play-state:running;
+        }
+
+        @keyframes nava{
+            from{
+                height:80px;
+                width: 80px;
+                border:2px solid red;
+                background-color:yellow;
+                border-radius:30%;
+            }
+            to{
+                height:170px;
+                width:170px;
+                border:5px solid black;
+                background-color:red;
+                border-radius:50%;
+                transform:translatex(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+</html>
