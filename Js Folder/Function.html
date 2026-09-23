@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functionn</title>
+</head>
+<body>
+    <script>
+        //IIFE
+
+        ( 
+            function(){
+                console.log("I am IIFE...")
+            }
+        )
+        ();
+        (
+            function(){
+                console.log("Bye Bye...")
+            }
+        )();
+        //Named Function
+
+        function nava(){
+            console.log("I am Navaa...")
+        }
+        nava()
+        function nithi(){
+            console.log("I am Nithi...")
+        }
+        nithi()
+
+        //Addition
+        function sum(a,b){
+            return a+b;
+        }
+        console.log(sum(10,20))
+        //or
+        let a=sum(5,50);
+        console.log(a)
+
+        //subraction
+        function sub(a,b){
+            return a-b;
+        }
+        console.log(sub(18,11))
+        //orr
+        let b=sub(200,100)
+        console.log(b);
+
+        //Function Expression...
+        let x=function chintu(){
+            console.log("I am Chintuu")
+          }
+        x()
+        let n=function mintu(){
+            console.log("I am Mintuu")
+        }
+        n()
+
+        //Anonymous Function..
+        let m=function(){
+            console.log("HIi Bujji")
+        }
+        m()
+
+        //Nested Function..
+        function parent(){
+            console.log("I am Parent..")
+            function child(){
+                Console.log("I am Child")
+            }
+            child()
+        }
+        parent()   
+        
+        function dingi(){
+            console.log("How Are you Dingii")
+            function mintu(){
+                console.log("How are mintuu")
+                function gindi(){
+                    console.log("How are gindii")
+                    
+                }
+                gindi()
+               
+            }
+             mintu()
+            
+        }
+        dingi()
+
+    </script>
+</body>
+</html>

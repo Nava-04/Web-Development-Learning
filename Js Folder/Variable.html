@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variablessss</title>
+</head>
+<body>
+    <script>
+        //Var
+        {
+            var a;//declaration
+            a=10;//initialisation
+            console.log(a)
+
+            var a;//re-declaration
+            a=20;//re-initialization
+            console.log(a)
+
+            var a=30;//re-declaration and re-initialization
+            console.log(a)
+        }
+        console.log(a)
+
+        //let
+        {
+            let b;//declaration
+            b=50;//initialization
+            console.log(b)
+
+            //let b;//re-declaration not possiblee
+            b=100;//re-initialization is possible
+            console.log(b)
+
+            //let b=150;//re-declaration and re-initialization not possible 
+            b=150;//re-initialization is possible
+            console.log(b)
+        }
+        //console.log(b)//error
+
+        //const
+        {
+            //const c;//declaration not possible
+            //c=300 //initialization not possible
+
+            const d=500; //Both declaration and initialization within the same line is possible
+            console.log(d)
+        }
+        console.log(d)//Error
+    </script>
+</body>
+</html>
